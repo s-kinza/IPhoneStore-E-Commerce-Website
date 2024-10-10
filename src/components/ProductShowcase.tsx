@@ -7,8 +7,8 @@ const ProductShowcase = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 bg-gray-900 rounded-lg shadow-lg p-6">
         
         {/* Left Section: Playstation 5 */}
-        <div className="lg:col-span-2 col-span-1 flex flex-col space-y-8 bg-gray-800 p-6 rounded-lg hover:shadow-2xl transition-shadow duration-300">
-          <div className="flex items-center">
+        <div className="lg:col-span-2 flex flex-col space-y-8 bg-gray-800 p-6 rounded-lg hover:shadow-2xl transition-shadow duration-300">
+          <div className="flex flex-col lg:flex-row items-center">
             <Image
               src="/images/playstation.png"
               alt="Playstation 5"
@@ -16,7 +16,7 @@ const ProductShowcase = () => {
               height={400}
               className="object-cover rounded-lg"
             />
-            <div className="ml-6 space-y-2">
+            <div className="lg:ml-6 space-y-2">
               <h2 className="text-3xl font-bold text-purple-300">Playstation 5</h2>
               <p className="text-gray-300 max-w-md">
                 Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.
@@ -63,7 +63,7 @@ const ProductShowcase = () => {
         </div>
 
         {/* Right Section: MacBook Air */}
-        <div className="lg:col-span-1 col-span-1 flex flex-col justify-center items-center bg-gray-800 p-6 rounded-lg hover:shadow-2xl transition-shadow duration-300">
+        <div className="lg:col-span-1 flex flex-col justify-center items-center bg-gray-800 p-6 rounded-lg hover:shadow-2xl transition-shadow duration-300">
           <div className="text-center">
             <h2 className="text-4xl font-bold text-purple-300 mb-4">
               MacBook <span className="text-gray-400">Air</span>
@@ -87,4 +87,6 @@ const ProductShowcase = () => {
     </section>
   );
 };
+
 export default ProductShowcase;
+

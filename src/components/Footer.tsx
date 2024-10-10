@@ -2,10 +2,11 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-10">
-      <div className="container mx-auto grid grid-cols-3 gap-8 px-6">
+    <footer className="bg-black text-white py-8">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-6">
+        {/* First Column */}
         <div>
-          <h2 className="text-md font-bold">cyber</h2>
+          <h2 className="text-lg font-bold">cyber</h2>
           <p className="mt-2 text-gray-400 text-sm">
             We are a residential interior design firm located in Portland. Our boutique-studio offers more than.
           </p>
@@ -16,8 +17,9 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Second Column - Services */}
         <div>
-          <h2 className="text-md font-bold">Services</h2>
+          <h2 className="text-lg font-bold">Services</h2>
           <ul className="mt-2 space-y-2 text-gray-400 text-sm">
             <li>Bonus program</li>
             <li>Gift cards</li>
@@ -28,8 +30,9 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* Third Column - Assistance to the buyer */}
         <div>
-          <h2 className="text-md font-bold">Assistance to the buyer</h2>
+          <h2 className="text-lg font-bold">Assistance to the buyer</h2>
           <ul className="mt-2 space-y-2 text-gray-400 text-sm">
             <li>Find an order</li>
             <li>Terms of delivery</li>
@@ -43,5 +46,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-  

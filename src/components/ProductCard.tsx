@@ -30,7 +30,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ imageUrl, title, price, isFav
           alt={title}
           width={300}
           height={300}
-          className="rounded-md object-cover h-48 w-full"
+          className="rounded-md object-cover h-48 w-full sm:h-56 md:h-64 lg:h-72"
         />
         <div className="absolute top-2 right-2">
           {isFavorite ? (
@@ -42,14 +42,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ imageUrl, title, price, isFav
       </div>
       <h3 className="text-lg font-semibold text-purple-300">{title}</h3>
       <p className="text-xl font-bold text-white">${price}</p>
-      <button className="bg-purple-600 text-white mt-4 px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-purple-500">
+      <button className="bg-purple-600 text-white mt-4 px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-purple-500 w-full sm:w-auto">
         Buy Now
       </button>
     </div>
-
-
-
-
   );
 };
 

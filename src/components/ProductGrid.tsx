@@ -5,7 +5,7 @@ const products = [
   { imageUrl: '/images/camera.jpg', title: 'Blackmagic Pocket Cinema Camera 6K', price: '2535', isFavorite: false },
   { imageUrl: '/images/watch.jpg', title: 'Apple Watch Series 9 GPS', price: '399', isFavorite: false },
   { imageUrl: '/images/airpods.jpg', title: 'Apple AirPods Max Silver', price: '549', isFavorite: false },
-  { imageUrl: '/images/samsung_watch.jpg', title: ' Galaxy Watch', price: '369', isFavorite: false },
+  { imageUrl: '/images/samsung_watch.jpg', title: 'Galaxy Watch', price: '369', isFavorite: false },
   { imageUrl: '/images/galaxy_fold.jpg', title: 'Galaxy Z Fold5', price: '1799', isFavorite: true },
   { imageUrl: '/images/galaxy_buds.jpg', title: 'Galaxy Buds FE', price: '99', isFavorite: false },
   { imageUrl: '/images/ipad.jpg', title: 'Apple iPad 10.2"', price: '398', isFavorite: false },
@@ -13,7 +13,7 @@ const products = [
 
 const ProductGrid = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+    <div className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
       {products.map((product, index) => (
         <div key={index} className="transition-all duration-300 delay-100">
           <ProductCard 
